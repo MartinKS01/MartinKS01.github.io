@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Martin Karl</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div class="container">
+
+
+      <header class="site-header">
+        <h1>Welcome to my page</h1>
+        <p class="lead">I'm a 24 year old student at the Universidad de los Andes creating my first website.</p>
+        <p class="intro-text">If I'm not in class I'm probably working out, playing music or hanging out with friends.</p>
+      </header>
+
+
+      <h2>A little bit about me</h2>
+      <ul class="about-list">
+        <li><strong>Name:</strong> Martin Karl</li>
+        <li><strong>Major:</strong> Environmental Civil Engineering</li>
+        <li><strong>Year of Enrollment:</strong> 2020</li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/MartinKS01" target="_blank">github.com/MartinKS01</a></li>
+      </ul>
+
+
+      <h2>Some of my skills</h2>
+      <table class="skills-table">
+        <thead>
+          <tr>
+            <th>Skill</th>
+            <th>Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Python</td><td><span class="level-badge level-intermediate">Intermediate</span></td></tr>
+          <tr><td>HTML</td><td><span class="level-badge level-basic">Basic</span></td></tr>
+          <tr><td>JavaScript</td><td><span class="level-badge level-basic">Basic</span></td></tr>
+          <tr><td>Excel</td><td><span class="level-badge level-advanced">Advanced</span></td></tr>
+          <tr><td>SQL</td><td><span class="level-badge level-intermediate">Intermediate</span></td></tr>
+          <tr><td>Git</td><td><span class="level-badge level-basic">Basic</span></td></tr>
+          <tr><td>Spanish</td><td><span class="level-badge level-native">Native</span></td></tr>
+          <tr><td>English</td><td><span class="level-badge level-advanced">advanced</span></td></tr>
+        </tbody>
+      </table>
+
+
+      <h2>My personal quote</h2>
+      <div class="quote-section">
+        <p id="quoteDisplay" class="quote-display empty">No quote yet — add one!</p>
+        <div class="input-row">
+          <input type="text" id="quoteInput" class="quote-input" placeholder="Write your favourite quote here">
+          <button class="quote-btn" onclick="updateQuote()">Add quote</button>
+        </div>
+      </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

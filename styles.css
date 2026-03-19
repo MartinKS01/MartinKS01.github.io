@@ -1,0 +1,212 @@
+:root {
+  --bg:        #f5f0e8;
+  --surface:   #ede5d0;
+  --border:    #c8b89a;
+  --accent:    #5a7a4a;
+  --accent-dk: #3d5733;
+  --text:      #2e2416;
+  --text-muted:#6b5744;
+  --brown:     #7a5c3a;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Georgia, serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.75;
+  padding: 2rem 1rem 4rem;
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.site-header {
+  border-bottom: 3px solid var(--brown);
+  padding-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.site-header h1 {
+  font-family: Georgia, serif;
+  font-size: 2.8rem;
+  color: var(--brown);
+  letter-spacing: -0.5px;
+}
+
+.lead {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.intro-text {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+h2 {
+  font-family: Georgia, serif;
+  font-size: 1.6rem;
+  color: var(--accent-dk);
+  margin: 2.5rem 0 1rem;
+  padding-left: 0.75rem;
+  border-left: 4px solid var(--accent);
+}
+
+.about-list {
+  list-style: none;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+}
+
+.about-list li {
+  padding: 0.4rem 0;
+  border-bottom: 1px dashed var(--border);
+  font-size: 0.97rem;
+}
+
+.about-list li:last-child { border-bottom: none; }
+
+.about-list a {
+  color: var(--accent-dk);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.about-list a:hover { color: var(--brown); }
+
+.skills-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.skills-table thead {
+  background-color: var(--accent);
+  color: #fff;
+  font-family: serif;
+  font-size: 1rem;
+}
+
+.skills-table thead th {
+  padding: 0.75rem 1.25rem;
+  text-align: left;
+  letter-spacing: 0.4px;
+}
+
+.skills-table tbody tr {
+  background-color: var(--surface);
+  border-bottom: 1px solid var(--border);
+  transition: background 0.15s;
+}
+
+.skills-table tbody tr:nth-child(even) {
+  background-color: var(--bg);
+}
+
+.skills-table tbody tr:hover {
+  background-color: #d8ead0;
+}
+
+.skills-table tbody td {
+  padding: 0.65rem 1.25rem;
+  font-size: 0.95rem;
+}
+
+.level-badge {
+  display: inline-block;
+  padding: 0.15rem 0.65rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: serif;
+  letter-spacing: 0.3px;
+}
+
+.level-native, .level-advanced { background: #c8e6c0; color: #2e5a1e; }
+.level-expert                  { background: #b2d8b2; color: #1e4a14; }
+.level-intermediate            { background: #f0e2b8; color: #6b4a00; }
+.level-basic                   { background: #ede5d0; color: var(--text-muted); border: 1px solid var(--border); }
+
+.quote-section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.quote-display {
+  min-height: 3rem;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--brown);
+  margin-bottom: 1.25rem;
+  border-left: 3px solid var(--accent);
+  padding-left: 1rem;
+  transition: opacity 0.3s;
+}
+
+.quote-display.empty {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-style: normal;
+}
+
+.input-row {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.quote-input {
+  flex: 1;
+  min-width: 180px;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Lora', serif;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.quote-input:focus {
+  border-color: var(--accent);
+}
+
+.quote-btn {
+  padding: 0.6rem 1.4rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-family: serif;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.quote-btn:hover { background: var(--accent-dk); }
+
+.site-footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
